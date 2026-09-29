@@ -1,0 +1,34 @@
+﻿@* <!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ASP_HW_2</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+
+    <header>
+        <a asp-controller="Home" asp-action="Index">ASP_HW_2</a>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Home" asp-action="About">About</a>
+            <a asp-controller="Favorite" asp-action="Games">Games</a>
+            <a asp-controller="Favorite" asp-action="Movies">Movies</a>
+            <a asp-controller="Favorite" asp-action="Music">Music</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="favorite-page">
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 - ASP_HW_2 - <a asp-controller="Home" asp-action="Privacy">Privacy</a></p>
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html> *@

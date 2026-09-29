@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="favorite-page">
+    <h1>Мої улюблені речі</h1>
+
+    <p>
+        Привіт! Це мій сайт про речі, які мені подобаються найбільше.
+        Тут можна дізнатися про мої улюблені відеоігри, фільми та музику.
+    </p>
+
+    <h2>Переглянути сторінки</h2>
+
+    <p>
+        <a class="page-button"
+           asp-controller="Home"
+           asp-action="About">
+            Про мене
+        </a>
+    </p>
+
+    <p>
+        <a class="page-button"
+           asp-controller="Favorite"
+           asp-action="Games">
+            Улюблені ігри
+        </a>
+    </p>
+
+    <p>
+        <a class="page-button"
+           asp-controller="Favorite"
+           asp-action="Music">
+            Улюблена музика
+        </a>
+    </p>
+</div>

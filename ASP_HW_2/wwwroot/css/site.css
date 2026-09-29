@@ -1,0 +1,207 @@
+/* =========================
+   BASE
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #252b36;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #e3e7ee;
+    box-shadow: 0 2px 8px rgba(30, 50, 80, 0.04);
+}
+
+    nav a {
+        display: inline-block;
+        padding: 9px 16px;
+        background: #f0f3f8;
+        color: #35445b;
+        border: 1px solid #e1e6ef;
+        border-radius: 7px;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+        nav a:hover {
+            background: #2563eb;
+            border-color: #2563eb;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+.main-content {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.favorite-page {
+    width: calc(100% - 40px);
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 40px;
+    background: #ffffff;
+    border: 1px solid #e8ebf1;
+    border-radius: 12px;
+    box-shadow: 0 5px 22px rgba(30, 50, 80, 0.05);
+}
+
+
+    /* =========================
+   HEADINGS
+   ========================= */
+
+    .favorite-page h1 {
+        margin: 0 0 25px;
+        padding-bottom: 18px;
+        color: #1e293b;
+        font-size: 38px;
+        line-height: 1.25;
+        font-weight: 700;
+        border-bottom: 3px solid #dbeafe;
+    }
+
+    .favorite-page h2 {
+        margin: 42px 0 15px;
+        padding-left: 13px;
+        color: #334155;
+        font-size: 26px;
+        line-height: 1.35;
+        font-weight: 600;
+        border-left: 4px solid #3b82f6;
+    }
+
+
+    /* =========================
+   TEXT
+   ========================= */
+
+    .favorite-page p {
+        margin: 0 0 22px;
+        color: #515d6e;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+
+    /* =========================
+   IMAGES
+   ========================= */
+
+    .favorite-page img {
+        display: block;
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        margin: 22px 0 32px;
+        border: 1px solid #e0e5ed;
+        border-radius: 9px;
+        box-shadow: 0 4px 14px rgba(30, 50, 80, 0.10);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+        .favorite-page img:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 22px rgba(30, 50, 80, 0.15);
+        }
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.page-button {
+    display: inline-block;
+    margin: 8px 5px 8px 0;
+    padding: 11px 18px;
+    background: #2563eb;
+    color: #ffffff;
+    border: 1px solid #2563eb;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .page-button:hover {
+        background: #1d4ed8;
+        border-color: #1d4ed8;
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+    }
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+    nav {
+        gap: 7px;
+        padding: 12px;
+    }
+
+        nav a {
+            padding: 8px 11px;
+            font-size: 14px;
+        }
+
+    .favorite-page {
+        width: calc(100% - 24px);
+        margin: 18px auto;
+        padding: 25px 20px;
+        border-radius: 9px;
+    }
+
+        .favorite-page h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .favorite-page h2 {
+            margin-top: 32px;
+            font-size: 23px;
+        }
+
+        .favorite-page p {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+}
